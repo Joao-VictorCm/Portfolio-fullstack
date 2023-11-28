@@ -1,0 +1,43 @@
+.services{
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.services .service{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services .service img{
+    width: 430px;
+    height:230px ;
+    margin-bottom: 30px;
+}
+
+.services .service h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.services .service p{
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 20px auto 0;
+    line-height: 25px;
+}
+
+
+
+.linguagens{
+    padding: 15px;
+    font-size: 1,5rem;
+    color: #0be6e6
+}
+
+@media(max-width:625px){
+    .services{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,78 @@
+.hero {
+    grid-area: hero;
+    flex-direction: column;
+    height: 89vh;
+    background: url(../img/looper_bg.svg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 50px;
+}
+
+.hero h2 {
+    display: flex;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.name{
+    color: #10a87d;
+    text-transform: uppercase;
+}
+
+.hero::after {
+    content: url("../images/seta_preta.png");
+    position: absolute;
+    height: 30px;
+    bottom: 40px;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+.box-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.botao-gradient {
+
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #10a87d;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9;
+    }
+}
+
+@media(max-width: 425px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}

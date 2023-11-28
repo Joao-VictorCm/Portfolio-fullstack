@@ -1,0 +1,57 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "hero hero hero hero"
+                         "about about about about"
+                         "skills skills skills skills"
+                         "services services services services"
+                         "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    grid-area: header;
+    background-color: #fff;
+    position: sticky;   
+    top: 0;
+    z-index: 1;
+}
+.header .header-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;             
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.header a:hover h1{
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    font-size: 1.2em;
+    color: #10a87d;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+}
+
+.habilidades{
+    grid-area: skills;
+}
+
+.footer{
+    grid-area: footer;
+}
+
