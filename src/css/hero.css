@@ -18,7 +18,7 @@
 
 .name{
     color: #10a87d;
-    text-transform: uppercase;
+    font-size: 700;
 }
 
 .hero::after {
@@ -51,9 +51,8 @@
     text-decoration: none;
     color: #10a87d;
     padding: 0.5em 1.5em;
-    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
-
 
 @-webkit-keyframes downarrow {
     0% {
