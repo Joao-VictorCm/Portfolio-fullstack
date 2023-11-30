@@ -1,5 +1,6 @@
 html{
     font-size: 62.5%;
+    
 }
 
 body{
@@ -14,6 +15,8 @@ body{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    background-color: #000000;
+    color: aliceblue;
 }
 
 .header{
@@ -55,3 +58,9 @@ body{
     grid-area: footer;
 }
 
+.carousel{
+width: 800px;
+height: 500px;
+margin: 35px;
+
+}

@@ -3,7 +3,7 @@
     grid-area: about;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #fff; 
+    background-color: #000000; 
     margin: 0 auto;
     height: 89vh;
     align-items: center;
@@ -49,8 +49,11 @@
 }
 
 .about .image.left{
-    background: url("../img/img-avatar.gif") center center no-repeat;
+    background: url("../img/img-avatar.gif") center center no-repeat, border-box; 
     background-size: cover;
+    border-radius: 49%;
+    border: 3px solid;
+    border-color:  #0be6e6;
 }
 @media(max-width: 500px){
     .about .item{

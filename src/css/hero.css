@@ -39,7 +39,7 @@
 
 .botao-gradient {
 
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
     border-radius: 50em;
     border: 3px solid transparent;
     position: relative;
@@ -50,8 +50,13 @@
     font-weight: bold;
     text-decoration: none;
     color: #10a87d;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1.6em;
     transition: 0.3s ease-in-out;
+}
+
+.botao-gradient:hover{
+    transform: scale(1.1);
+    transition: .8s;
 }
 
 @-webkit-keyframes downarrow {
