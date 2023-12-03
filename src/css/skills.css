@@ -4,14 +4,32 @@
     text-transform: uppercase;
     font-size: 4rem;
     justify-content: center;
+    margin-bottom: 25px;
+    color:  #0be6e6;
 }
 
+.text-skills {
+    display: flex;
+    justify-content: center;
+    font-size: 400;
+}
+
+.habilidades-linguagens,
+.framework,
+.ferramentas {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .habilidades .container-habilidades {
     text-align: center;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 

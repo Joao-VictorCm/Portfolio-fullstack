@@ -16,15 +16,16 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background-color: #000000;
-    color: aliceblue;
+    color: #fff;;
 }
 
 .header{
     grid-area: header;
-    background-color: #fff;
+    background-color: #00000082;
     position: sticky;   
     top: 0;
     z-index: 1;
+    opacity: 1;
 }
 .header .header-container{
     display: flex;
@@ -32,22 +33,24 @@ body{
     justify-content: space-between;             
     align-items: center;
     min-height: 75px;
+    
 }
 
 .header h1{
     font-size: 3rem;
     font-weight: 700;
     transition: 0.3s;
+    color: #fff;
 }
 
 .header a:hover h1{
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
     border-radius: 50em;
     border: 3px solid transparent;
     font-size: 1.2em;
-    color: #10a87d;
+    color: #0be6e6;
     padding: 0.5em 1.5em;
     cursor: pointer;
+    border-color: #0be6e6;
 }
 
 .habilidades{
